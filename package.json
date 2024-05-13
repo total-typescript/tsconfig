@@ -1,9 +1,15 @@
 {
   "name": "@total-typescript/tsconfig",
-  "version": "1.0.0",
+  "description": "A collection of TypeScript configurations, based on Total TypeScript's TSConfig Cheat Sheet",
+  "version": "1.0.1",
   "devDependencies": {
     "@changesets/cli": "^2.27.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/total-typescript/tsconfig.git"
+  },
+  "homepage": "https://totaltypescript.com/tsconfig-cheat-sheet",
   "author": "Matt Pocock",
   "license": "MIT",
   "exports": {
