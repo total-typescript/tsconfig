@@ -1,7 +1,7 @@
 {
   "name": "@total-typescript/tsconfig",
   "description": "A collection of TypeScript configurations, based on Total TypeScript's TSConfig Cheat Sheet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "devDependencies": {
     "@changesets/cli": "^2.27.1"
   },

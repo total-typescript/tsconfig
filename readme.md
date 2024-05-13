@@ -16,7 +16,7 @@ npm install --save-dev @total-typescript/tsconfig
 
 3. Add it to your `tsconfig.json`:
 
-```json
+```jsonc
 {
   // I'm building an app that runs in the DOM with an external bundler
   "extends": "@total-typescript/tsconfig/bundler/dom/app"
