@@ -1,19 +1,29 @@
 {
   "name": "@total-typescript/tsconfig",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "devDependencies": {
     "@changesets/cli": "^2.27.1"
   },
   "author": "Matt Pocock",
   "license": "MIT",
   "exports": {
+    "./tsc": "./tsc/dom/app.json",
+    "./tsc/dom": "./tsc/dom/app.json",
     "./tsc/dom/app": "./tsc/dom/app.json",
     "./tsc/dom/library": "./tsc/dom/library.json",
     "./tsc/dom/library-monorepo": "./tsc/dom/library-monorepo.json",
-    "./tsc/node/app": "./tsc/node/app.json",
-    "./tsc/node/library": "./tsc/node/library.json",
-    "./tsc/node/library-monorepo": "./tsc/node/library-monorepo.json",
+    "./tsc/no-dom": "./tsc/no-dom/app.json",
+    "./tsc/no-dom/app": "./tsc/no-dom/app.json",
+    "./tsc/no-dom/library": "./tsc/no-dom/library.json",
+    "./tsc/no-dom/library-monorepo": "./tsc/no-dom/library-monorepo.json",
+    "./bundler": "./bundler/dom.json",
     "./bundler/dom": "./bundler/dom.json",
-    "./bundler/node": "./bundler/node.json"
+    "./bundler/dom/app": "./bundler/dom.json",
+    "./bundler/dom/library": "./bundler/dom.json",
+    "./bundler/dom/library-monorepo": "./bundler/dom.json",
+    "./bundler/no-dom": "./bundler/no-dom.json",
+    "./bundler/no-dom/app": "./bundler/no-dom.json",
+    "./bundler/no-dom/library": "./bundler/no-dom.json",
+    "./bundler/no-dom/library-monorepo": "./bundler/no-dom.json"
   }
 }
