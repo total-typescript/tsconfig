@@ -1,9 +1,19 @@
 {
   "name": "@total-typescript/tsconfig",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "devDependencies": {
     "@changesets/cli": "^2.27.1"
   },
   "author": "Matt Pocock",
-  "license": "MIT"
+  "license": "MIT",
+  "exports": {
+    "./tsc/dom/app": "./tsc/dom/app.json",
+    "./tsc/dom/library": "./tsc/dom/library.json",
+    "./tsc/dom/library-monorepo": "./tsc/dom/library-monorepo.json",
+    "./tsc/node/app": "./tsc/node/app.json",
+    "./tsc/node/library": "./tsc/node/library.json",
+    "./tsc/node/library-monorepo": "./tsc/node/library-monorepo.json",
+    "./bundler/dom": "./bundler/dom.json",
+    "./bundler/node": "./bundler/node.json"
+  }
 }
