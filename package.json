@@ -3,5 +3,7 @@
   "version": "0.0.1",
   "devDependencies": {
     "@changesets/cli": "^2.27.1"
-  }
+  },
+  "author": "Matt Pocock",
+  "license": "MIT"
 }
