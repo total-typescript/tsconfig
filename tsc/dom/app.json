@@ -15,7 +15,6 @@
     "noImplicitOverride": true,
     /* If transpiling with TypeScript: */
     "module": "NodeNext",
-    "outDir": "dist",
     "sourceMap": true,
     /* If your code runs in the DOM: */
     "lib": ["es2022", "dom", "dom.iterable"]
