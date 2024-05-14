@@ -13,10 +13,9 @@
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
-    /* If transpiling with TypeScript: */
-    "module": "NodeNext",
-    "outDir": "dist",
-    "sourceMap": true,
+    /* If NOT transpiling with TypeScript: */
+    "module": "preserve",
+    "noEmit": true,
     /* If your code runs in the DOM: */
     "lib": ["es2022", "dom", "dom.iterable"]
   }
