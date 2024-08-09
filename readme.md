@@ -86,7 +86,7 @@ Mostly relevant for when you're transpiling with `tsc`. If you want to change th
 
 ```json
 {
-  "extends": "@total-typescript/tsconfig/tsc/node/library",
+  "extends": "@total-typescript/tsconfig/tsc/no-dom/library",
   "compilerOptions": {
     "outDir": "dist"
   }
