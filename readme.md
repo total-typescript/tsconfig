@@ -93,9 +93,36 @@ Mostly relevant for when you're transpiling with `tsc`. If you want to change th
 }
 ```
 
-### Framework-Specific Options
+## Framework-Specific Options
 
-I don't yet cover framework-specific options, like `vite`, `next`, `remix`, etc. With enough persuasion, I might add them in the future.
+I don't yet cover framework-specific options, like `vite`, `next`, `remix`, etc. With enough persuasion, I might add them in the future. However, some guidance has been provided below.
+
+### Next.js
+
+The `@total-typescript/tsconfig/bundler/dom/app` config is appropriate for a typical Next.js app. Next.js does a fairly naive check of the `tsconfig.json` file when `next dev` or `next build` is run and automatically sets these options:
+
+- `incremental`
+- `jsx`
+- `noEmit`
+- `plugins` (adds the `"next"` plugin if not present)
+- `strictNullChecks`
+
+It will also add `"next-env.d.ts"` and `".next/types/**/*.ts"` to the `include` field so the Next.js types are available. The final config file will look like this:
+
+```json
+{
+  "extends": "@total-typescript/tsconfig/bundler/dom/app",
+  "compilerOptions": {
+    "incremental": true,
+    "jsx": "preserve",
+    "noEmit": true,
+    "plugins": [{ "name": "next" }],
+    "strictNullChecks": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "src"]
+}
+```
 
 ## Why Not Use `@tsconfig/bases`?
 
