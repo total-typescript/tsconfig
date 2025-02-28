@@ -11,6 +11,7 @@
     "verbatimModuleSyntax": true,
     /* Strictness */
     "strict": true,
+    "erasableSyntaxOnly": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     /* If NOT transpiling with TypeScript: */
